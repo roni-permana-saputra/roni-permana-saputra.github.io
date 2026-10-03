@@ -57,6 +57,7 @@ main { max-width: 720px; }
 h1 { font-size: 1.8rem; margin-bottom: 20px; }
 h2 { font-size: 1.25rem; margin: 32px 0 10px; }
 h3 { font-size: 1rem; }
+.intro { font-size: 1.15rem; line-height: 1.55; color: var(--ink); margin-bottom: 1.1em; }
 .page-head .lead { color: var(--muted); margin-bottom: 0; }
 .page-head h1 { margin-bottom: 10px; }
 .eyebrow { display: none; }
