@@ -23,7 +23,7 @@ Repositori publik sudah ada. Pengunggahan harus dilakukan dengan akun yang memil
 Panduan resmi: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ## Mengedit isi
-Edit teks langsung pada halaman HTML terkait. Profil di bagian samping dan menu ada di setiap halaman; ubah pada semua halaman jika diperlukan. Ganti foto dengan file images/ron.jpg. CV merupakan ringkasan berdasarkan informasi pada website lama, bukan riwayat pekerjaan lengkap. Publikasi sengaja diberi label Selected publications; ini bukan daftar lengkap hingga 2026.
+Edit teks langsung pada halaman HTML terkait. Menu dan footer ada di setiap halaman; ubah pada semua halaman jika diperlukan. Tampilan (warna, font, jarak) diatur di assets/site.css; warna ada di bagian :root paling atas, termasuk versi mode gelap. Font Inter dan Source Serif 4 dimuat dari Google Fonts. Ganti foto dengan file images/ron.jpg. CV merupakan ringkasan berdasarkan informasi pada website lama, bukan riwayat pekerjaan lengkap. Publikasi sengaja diberi label Selected publications; ini bukan daftar lengkap hingga 2026.
 
 ## Sumber
 Biodata, pendidikan, email, dan foto: repositori website Anda (snapshot b511748).
