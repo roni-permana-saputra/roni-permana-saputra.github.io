@@ -58,6 +58,16 @@ h1 { font-size: 1.8rem; margin-bottom: 20px; }
 h2 { font-size: 1.25rem; margin: 32px 0 10px; }
 h3 { font-size: 1rem; }
 .intro { font-size: 1.15rem; line-height: 1.55; color: var(--ink); margin-bottom: 1.1em; }
+.prose h3 { margin: 18px 0 6px; }
+.team { columns: 2; column-gap: 32px; }
+.team li { break-inside: avoid; }
+@media (max-width: 760px) { .team { columns: 1; } }
+.areas > h2:first-child { margin-top: 0; }
+.areas + .entry { margin-top: 4px; padding-top: 12px; border-top: 0; }
+.figure { margin: 20px 0 8px; }
+.figure img { display: block; width: 100%; max-width: 360px; height: auto; border-radius: 6px; border: 1px solid var(--line); }
+.figure figcaption { margin-top: 6px; font-size: .88rem; color: var(--muted); }
+.page-head { margin-bottom: 20px; }
 .page-head .lead { color: var(--muted); margin-bottom: 0; }
 .page-head h1 { margin-bottom: 10px; }
 .eyebrow { display: none; }
