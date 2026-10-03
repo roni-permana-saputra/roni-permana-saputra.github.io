@@ -1,6 +1,6 @@
 # Website pribadi Roni Permana Saputra
 
-Website statis untuk repositori **roni-permana-saputra/roni-permana-saputra.github.io**. Tampilan terinspirasi tata letak akademik Digby Chappell; implementasi HTML/CSS mandiri, tanpa dependensi atau proses build.
+Website statis untuk repositori **roni-permana-saputra/roni-permana-saputra.github.io**. 
 
 ## Isi
 - index.html: biodata, minat riset, kontak.
