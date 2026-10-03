@@ -4,9 +4,9 @@ Website statis untuk repositori **roni-permana-saputra/roni-permana-saputra.gith
 
 ## Isi
 - index.html: biodata, minat riset, kontak.
-- cv.html: ringkasan CV dan tombol cetak/simpan PDF.
-- research.html: proyek ResQbot, Deep_GPPC, personal mobility, PythonMobileRobot.
-- publications.html: enam publikasi terpilih dengan tautan artikel, DOI, dan kode.
+- cv.html: CV (posisi, pendidikan, daftar publikasi, paten, keahlian) dan tombol cetak/simpan PDF.
+- research.html: fusi sensor dan lokalisasi, personal mobility (SEATER), robot inspeksi, ResQbot, Deep_GPPC, PythonMobileRobot.
+- publications.html: 25 publikasi (jurnal, konferensi, pracetak) per tahun dengan tautan DOI, arXiv, dan kode.
 - assets/site.css dan assets/site.js: tampilan responsif dan menu ponsel.
 - images/ron.jpg: foto dari website Anda yang lama.
 - .nojekyll: melewati pemrosesan Jekyll.

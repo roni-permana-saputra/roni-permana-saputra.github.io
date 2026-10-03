@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Roni Permana Saputra</title>
-  <meta name="description" content="Roni Permana Saputra — robotics researcher at BRIN. Research in autonomous mobile robots, robot perception, navigation and control.">
+  <meta name="description" content="Roni Permana Saputra — senior robotics researcher and research group leader (RoSI) at BRIN. Research in autonomous mobile robots, robot perception, navigation and control.">
   <link rel="canonical" href="https://roni-permana-saputra.github.io/research.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Research — Roni Permana Saputra">
-  <meta property="og:description" content="Roni Permana Saputra — robotics researcher at BRIN. Research in autonomous mobile robots, robot perception, navigation and control.">
+  <meta property="og:description" content="Roni Permana Saputra — senior robotics researcher and research group leader (RoSI) at BRIN. Research in autonomous mobile robots, robot perception, navigation and control.">
   <meta property="og:url" content="https://roni-permana-saputra.github.io/research.html">
   <meta property="og:image" content="https://roni-permana-saputra.github.io/images/ron.jpg">
   <meta name="theme-color" content="#1d6b74">
@@ -39,21 +39,55 @@
         <h1>Research</h1>
         <p class="lead">My research explores how mobile robots perceive their surroundings, plan their motion, and interact with the physical world.</p>
       </header>
-      <article class="entry" id="casualty-extraction">
+      <article class="entry" id="sensor-fusion">
         <div>
           <div class="num" aria-hidden="true">01</div>
+          <p class="meta">Sensor fusion<br>State estimation</p>
+        </div>
+        <div>
+          <h2>Sensor fusion and localisation</h2>
+          <p>Reliable localisation is a prerequisite for autonomous ground vehicles, and it has to work with sensors that are affordable. This work fuses wheel odometry, inertial measurements, consumer-grade GPS, and RTAB-Map visual mapping through extended Kalman filtering, and evaluates the result on personal mobility vehicles in outdoor environments.</p>
+          <p>Related work covers indoor localisation that combines an indoor positioning system with odometry, and a survey of sensor fusion for GPS-aided localisation. My current work extends this line towards learning-based sensor fusion for state estimation.</p>
+          <div class="entry-links"><a href="https://doi.org/10.1007/s41315-025-00443-5">Fusion-based localisation paper</a><a href="https://doi.org/10.55981/j.mev.2025.1294">EKF fusion paper</a><a href="https://doi.org/10.11113/jurnalteknologi.v88.24026">Survey</a><a href="https://arxiv.org/abs/2509.22693">Indoor localisation preprint</a></div>
+        </div>
+      </article>
+      <article class="entry" id="personal-mobility">
+        <div>
+          <div class="num" aria-hidden="true">02</div>
+          <p class="meta">Autonomous navigation<br>Personal mobility</p>
+        </div>
+        <div>
+          <h2>Autonomous personal mobility</h2>
+          <p>This research investigates perception and control for personal mobility vehicles, including visual-feedback docking, wheelchair localisation, and real-time lane detection on BRIN’s SEATER prototype. SEATER (Single-passenger Electric Autonomous Transporter) is a compact differential-drive vehicle for first- and last-mile mobility, developed in indoor (I-SEATER) and outdoor (O-SEATER) variants.</p>
+          <p>The docking and path-tracking studies use nonlinear model predictive control, while the lane-detection work evaluates learning-based perception on an embedded computing platform.</p>
+          <div class="entry-links"><a href="https://arxiv.org/abs/2312.16629">Docking paper</a><a href="https://doi.org/10.55981/j.mev.2024.1105">NMPC paper</a><a href="https://arxiv.org/abs/2411.14873">Lane-detection paper</a><a href="https://arxiv.org/abs/2405.02290">Wheelchair localisation paper</a></div>
+        </div>
+      </article>
+      <article class="entry" id="inspection">
+        <div>
+          <div class="num" aria-hidden="true">03</div>
+          <p class="meta">Field robotics<br>Multimodal sensing</p>
+        </div>
+        <div>
+          <h2>Inspection and exploration robots</h2>
+          <p>With the Robotics and System Intelligence (RoSI) research group at BRIN, I work on mobile robots for inspection and exploration, including quadruped platforms and multimodal sensor payloads. This is ongoing work.</p>
+        </div>
+      </article>
+      <article class="entry" id="casualty-extraction">
+        <div>
+          <div class="num" aria-hidden="true">04</div>
           <p class="meta">Rescue robotics<br>Model predictive control</p>
         </div>
         <div>
           <h2>Autonomous casualty extraction</h2>
           <p>ResQbot explores the use of mobile robots to approach and extract casualties. My work on hierarchical decomposed-objective model predictive control (HiDO-MPC) coordinates the motion objectives involved in autonomous casualty approach.</p>
-          <p>The research combines simulation and physical robot experiments to evaluate control accuracy and robustness. Related work on ResQbot 2.0 investigates a stretcher-style design with an inflatable neck-securing device, evaluated through simulation.</p>
-          <div class="entry-links"><a href="https://github.com/roni-permana-saputra/HiDO-MPC-ResQbot">HiDO-MPC code</a><a href="https://doi.org/10.1109/ACCESS.2021.3063782">Control paper</a><a href="https://www.mdpi.com/2076-3417/11/12/5414">ResQbot 2.0 paper</a></div>
+          <p>The research combines simulation and physical robot experiments to evaluate control accuracy and robustness. Related work on ResQbot 2.0 investigates a stretcher-style design with an inflatable neck-securing device, evaluated through simulation. A review of rescue robots for casualty extraction was published in 2025.</p>
+          <div class="entry-links"><a href="https://github.com/roni-permana-saputra/HiDO-MPC-ResQbot">HiDO-MPC code</a><a href="https://doi.org/10.1109/ACCESS.2021.3063782">Control paper</a><a href="https://www.mdpi.com/2076-3417/11/12/5414">ResQbot 2.0 paper</a><a href="https://doi.org/10.1109/ACCESS.2025.3637567">Review paper</a></div>
         </div>
       </article>
       <article class="entry" id="casualty-detection">
         <div>
-          <div class="num" aria-hidden="true">02</div>
+          <div class="num" aria-hidden="true">05</div>
           <p class="meta">Robot perception<br>Sim-to-real learning</p>
         </div>
         <div>
@@ -63,21 +97,9 @@
           <div class="entry-links"><a href="https://github.com/roni-permana-saputra/Deep_GPPC">Deep_GPPC code</a><a href="https://arxiv.org/abs/1908.03057">Paper</a></div>
         </div>
       </article>
-      <article class="entry" id="personal-mobility">
-        <div>
-          <div class="num" aria-hidden="true">03</div>
-          <p class="meta">Autonomous navigation<br>Personal mobility</p>
-        </div>
-        <div>
-          <h2>Autonomous personal mobility</h2>
-          <p>This research investigates perception and control for personal mobility vehicles, including visual-feedback docking, wheelchair localisation, and real-time lane detection on BRIN’s SEATER prototype.</p>
-          <p>The docking study uses nonlinear model predictive control, while the lane-detection work evaluates learning-based perception on an embedded computing platform.</p>
-          <div class="entry-links"><a href="https://arxiv.org/abs/2312.16629">Docking paper</a><a href="https://arxiv.org/abs/2411.14873">Lane-detection paper</a><a href="https://arxiv.org/abs/2405.02290">Localisation paper</a></div>
-        </div>
-      </article>
       <article class="entry" id="software">
         <div>
-          <div class="num" aria-hidden="true">04</div>
+          <div class="num" aria-hidden="true">06</div>
           <p class="meta">Open-source software</p>
         </div>
         <div>
