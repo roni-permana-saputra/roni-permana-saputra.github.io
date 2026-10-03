@@ -69,12 +69,13 @@ h3 { font-size: 1rem; }
 @media (max-width: 760px) { .team { columns: 1; } }
 .areas > h2:first-child { margin-top: 0; }
 .areas + .entry { margin-top: 4px; padding-top: 12px; border-top: 0; }
-.robots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 16px 0 20px; }
-.robots figure { margin: 0; text-align: center; }
-.robots img { display: block; width: 100%; max-width: 190px; height: auto; margin: 0 auto; border-radius: 50%; border: 1px solid var(--line); }
-.robots figcaption { margin-top: 10px; font-size: .88rem; line-height: 1.45; color: var(--muted); }
-.robots figcaption span { display: block; font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
-@media (max-width: 560px) { .robots { grid-template-columns: 1fr; } }
+.robots { margin: 14px 0 18px; }
+.robot { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 24px; align-items: start; padding: 16px 0; border-top: 1px solid var(--line); }
+.robot:first-child { border-top: 0; padding-top: 4px; }
+.robot img { display: block; width: 168px; height: 168px; object-fit: cover; border-radius: 50%; border: 1px solid var(--line); }
+.robot h3 { margin: 0 0 4px; font-size: 1rem; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--ink); }
+.robot p { margin: 0; font-size: .95rem; }
+@media (max-width: 560px) { .robot { grid-template-columns: 108px minmax(0, 1fr); gap: 14px; } .robot img { width: 108px; height: 108px; } }
 .figure { margin: 20px 0 8px; }
 .figure img { display: block; width: 100%; max-width: 360px; height: auto; border-radius: 6px; border: 1px solid var(--line); }
 .figure figcaption { margin-top: 6px; font-size: .88rem; color: var(--muted); }
