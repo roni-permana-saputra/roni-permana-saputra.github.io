@@ -83,6 +83,7 @@ h3 { font-size: 1rem; }
 .robot h3 { margin: 0 0 4px; font-size: 1rem; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--ink); }
 .robot p { margin: 0; font-size: .95rem; }
 @media (max-width: 560px) { .robot { grid-template-columns: 108px minmax(0, 1fr); gap: 14px; } .robot img, .robot .ph { width: 108px; height: 108px; } }
+.lab-logo { display: block; width: 100%; max-width: 220px; height: auto; margin: 4px 0 14px -8px; background: #fff; border-radius: 6px; }
 .figure { margin: 20px 0 8px; }
 .figure img { display: block; width: 100%; max-width: 360px; height: auto; border-radius: 6px; border: 1px solid var(--line); }
 .figure figcaption { margin-top: 6px; font-size: .88rem; color: var(--muted); }
