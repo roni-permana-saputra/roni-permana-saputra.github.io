@@ -13,8 +13,8 @@
   <meta property="og:image" content="https://roni-permana-saputra.github.io/images/ron.jpg">
   <meta name="theme-color" content="#111111">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23111111'/%3E%3Crect x='6.5' y='35' width='51' height='21' rx='10.5' fill='%23fff'/%3E%3Crect x='14' y='8.5' width='36' height='45' rx='11' fill='%23fff'/%3E%3Crect x='19.5' y='15' width='25' height='25' rx='5.5' fill='%23111111'/%3E%3Crect x='24.3' y='19.5' width='5.2' height='10' rx='2.6' fill='none' stroke='%23fff' stroke-width='1.7'/%3E%3Crect x='34.5' y='19.5' width='5.2' height='10' rx='2.6' fill='none' stroke='%23fff' stroke-width='1.7'/%3E%3Crect x='28' y='44' width='8' height='2.2' rx='1.1' fill='%23111111'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="assets/site.css?v=20261003t">
-  <script src="assets/site.js?v=20261003t" defer></script>
+  <link rel="stylesheet" href="assets/site.css?v=20261003w">
+  <script src="assets/site.js?v=20261003w" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -59,24 +59,29 @@
         <p>Our research areas are listed on the <a href="research.html">Research</a> page, and more information is on the <a href="https://brin.go.id/orei/en/pusat-riset-mekatronika-cerdas/page/robotika-dan-kecerdasan-sistem">RoSI page on the BRIN website</a>.</p>
         <h2>Robots and platforms</h2>
         <div class="robots">
-          <figure>
+          <div class="robot">
             <img src="images/i-seater.jpg" width="480" height="480" alt="I-SEATER, a white single-passenger autonomous vehicle, with a seated rider">
-            <figcaption><span>I-SEATER</span> Single-passenger autonomous transporter for indoor and confined areas.</figcaption>
-          </figure>
-          <figure>
+            <div>
+              <h3>I-SEATER</h3>
+              <p>I-SEATER is the indoor variant of SEATER (Single-passenger Electric Autonomous Transporter), a compact vehicle for first- and last-mile mobility inside buildings and confined areas. Its differential drive, with two independently driven rear wheels, lets it turn on the spot in narrow corridors, and it can be driven manually or run autonomously. We use it to study indoor localisation, docking, and navigation.</p>
+            </div>
+          </div>
+          <div class="robot">
             <img src="images/o-seater.jpg" width="480" height="480" alt="O-SEATER, a single-passenger autonomous vehicle with a canopy, parked outdoors">
-            <figcaption><span>O-SEATER</span> Outdoor variant for mapped routes between buildings.</figcaption>
-          </figure>
-          <figure>
+            <div>
+              <h3>O-SEATER</h3>
+              <p>O-SEATER is the outdoor variant of SEATER, built more ruggedly to carry a passenger along mapped routes between buildings in an integrated complex. It is our main platform for outdoor localisation research, where we fuse wheel odometry, inertial sensing, GPS, and vision, and for work on lane detection and path-tracking control.</p>
+            </div>
+          </div>
+          <div class="robot">
             <img src="images/dell-e.jpg" width="480" height="480" alt="DELL-E, a white last-mile delivery robot with a dark display showing two orange eyes">
-            <figcaption><span>DELL-E</span> Last-mile delivery robot.</figcaption>
-          </figure>
+            <div>
+              <h3>DELL-E</h3>
+              <p>DELL-E is our last-mile delivery robot. It runs on ROS 2 and combines LiDAR, inertial sensing, and satellite positioning for mapping, localisation, and navigation, both indoors and outdoors. It is also the platform on which we develop and test our complete autonomy software stack.</p>
+            </div>
+          </div>
         </div>
-        <ul class="plain-list">
-          <li>SEATER stands for Single-passenger Electric Autonomous Transporter: a compact differential-drive vehicle for first- and last-mile mobility.</li>
-          <li>Inspection robots: mobile and quadruped platforms carrying multimodal sensor payloads.</li>
-          <li>Research platforms: Clearpath Husky A200, Unitree Go2 Pro, Unitree G1 EDU, and Universal Robots UR5e.</li>
-        </ul>
+        <p>Alongside these, we develop inspection robots: mobile and quadruped platforms that carry multimodal sensor payloads. For research and validation we also use a Clearpath Husky A200, a Unitree Go2 Pro quadruped, a Unitree G1 EDU humanoid, and a Universal Robots UR5e manipulator.</p>
         <h2>Facilities</h2>
         <ul class="plain-list">
           <li>Vicon motion capture system for ground-truth validation of mobile robots</li>
