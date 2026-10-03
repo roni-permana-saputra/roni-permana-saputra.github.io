@@ -58,7 +58,12 @@ h1 { font-size: 1.8rem; margin-bottom: 20px; }
 h2 { font-size: 1.25rem; margin: 32px 0 10px; }
 h3 { font-size: 1rem; }
 .intro { font-size: 1.15rem; line-height: 1.55; color: var(--ink); margin-bottom: 1.1em; }
-.prose h3 { margin: 18px 0 6px; }
+.prose h3 { margin: 22px 0 6px; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.plain-list strong { font-weight: 400; color: var(--ink); }
+.areas .plain-list, .areas-list { list-style: none; padding-left: 0; }
+.areas .plain-list li { padding: 5px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .94rem; }
+.areas .plain-list li:first-child { border-top: 0; }
+.areas .plain-list strong { display: block; font-size: 1rem; }
 .team { columns: 2; column-gap: 32px; }
 .team li { break-inside: avoid; }
 @media (max-width: 760px) { .team { columns: 1; } }
