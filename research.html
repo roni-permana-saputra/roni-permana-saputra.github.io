@@ -13,8 +13,8 @@
   <meta property="og:image" content="https://roni-permana-saputra.github.io/images/profile.jpg">
   <meta name="theme-color" content="#111111">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23111111' stroke='%23111111' stroke-width='3.4' stroke-linejoin='round'%3E%3Crect x='4' y='35' width='56' height='24' rx='12'/%3E%3Crect x='12' y='5' width='40' height='52' rx='12'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Crect x='4' y='35' width='56' height='24' rx='12'/%3E%3Crect x='12' y='5' width='40' height='52' rx='12'/%3E%3C/g%3E%3Crect x='18.5' y='12' width='27' height='27' rx='6' fill='%23111111'/%3E%3Crect x='23.6' y='16.8' width='5.6' height='11' rx='2.8' fill='none' stroke='%23fff' stroke-width='1.9'/%3E%3Crect x='34.8' y='16.8' width='5.6' height='11' rx='2.8' fill='none' stroke='%23fff' stroke-width='1.9'/%3E%3Crect x='27.5' y='45' width='9' height='2.6' rx='1.3' fill='%23111111'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="assets/site.css?v=20261004l">
-  <script src="assets/site.js?v=20261004l" defer></script>
+  <link rel="stylesheet" href="assets/site.css?v=20261004m">
+  <script src="assets/site.js?v=20261004m" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -71,73 +71,103 @@
           <li><strong>Multi-robot systems and fleet management</strong> Coordination, task allocation, and communication for logistics, inspection, and service applications.</li>
           <li><strong>Human–robot interaction</strong> Safe and intuitive interfaces, collaboration modes, and supervision.</li>
         </ul>
-        <h2>Projects</h2>
       </section>
-      <article class="entry" id="sensor-fusion">
-        <div>
-          <div class="num" aria-hidden="true">01</div>
-          <p class="meta">Sensor fusion · State estimation</p>
-        </div>
-        <div>
-          <h2>Sensor fusion and localisation</h2>
-          <p>Reliable localisation is a prerequisite for autonomous ground vehicles, and it has to work with sensors that are affordable. This work fuses wheel odometry, inertial measurements, consumer-grade GPS, and RTAB-Map visual mapping through extended Kalman filtering, and evaluates the result on personal mobility vehicles in outdoor environments.</p>
-          <p>Related work covers indoor localisation that combines an indoor positioning system with odometry, and a survey of sensor fusion for GPS-aided localisation. My current work extends this line towards learning-based sensor fusion for state estimation.</p>
-          <div class="entry-links"><a href="https://doi.org/10.1007/s41315-025-00443-5">Fusion-based localisation paper</a><a href="https://doi.org/10.55981/j.mev.2025.1294">EKF fusion paper</a><a href="https://doi.org/10.11113/jurnalteknologi.v88.24026">Survey</a><a href="https://arxiv.org/abs/2509.22693">Indoor localisation preprint</a></div>
-        </div>
-      </article>
+      <h2 class="group-head">Current research programmes</h2>
       <article class="entry" id="personal-mobility">
         <div>
-          <div class="num" aria-hidden="true">02</div>
           <p class="meta">Autonomous navigation · Personal mobility</p>
         </div>
         <div>
-          <h2>Autonomous personal mobility</h2>
-          <p>This research investigates perception and control for personal mobility vehicles, including visual-feedback docking, wheelchair localisation, and real-time lane detection on BRIN’s SEATER prototype. SEATER (Single-passenger Electric Autonomous Transporter) is a compact differential-drive vehicle for first- and last-mile mobility, developed in indoor (I-SEATER) and outdoor (O-SEATER) variants.</p>
-          <p>The docking and path-tracking studies use nonlinear model predictive control, while the lane-detection work evaluates learning-based perception on an embedded computing platform.</p>
-          <div class="entry-links"><a href="https://arxiv.org/abs/2312.16629">Docking paper</a><a href="https://doi.org/10.55981/j.mev.2024.1105">NMPC paper</a><a href="https://arxiv.org/abs/2411.14873">Lane-detection paper</a><a href="https://arxiv.org/abs/2405.02290">Wheelchair localisation paper</a></div>
+          <h3>Autonomous personal mobility and mobility-on-demand</h3>
+          <p>We develop SEATER (Single-passenger Electric Autonomous Transporter), a compact electric vehicle for first- and last-mile travel inside campuses, office complexes, and other managed areas, in indoor (I-SEATER) and outdoor (O-SEATER) variants. The aim is an autonomous mobility-on-demand service that is affordable enough to deploy in Indonesia.</p>
+          <p>The work covers the whole vehicle: platform design, docking and path tracking with nonlinear model predictive control, lane detection and lane keeping with learned perception, and a virtual-reality environment for driver testing. A new collaboration with Shanghai Jiao Tong University extends this towards semantic urban mapping and multimodal intelligent transport.</p>
+          <p class="funding"><span>Funding</span> BRIN (2023, 2024), with Universitas Diponegoro; BRIN – LPDP – MOST China (2026), with Shanghai Jiao Tong University.</p>
+          <div class="entry-links"><a href="https://doi.org/10.1109/ICRAMET60171.2023.10366563">Docking with NMPC</a><a href="https://doi.org/10.55981/j.mev.2024.1105">Path tracking with NMPC</a><a href="https://doi.org/10.1109/ATNT61688.2024.10719329">Lane detection</a><a href="https://ieeexplore.ieee.org/document/11350129">Lane keeping</a><a href="https://ieeexplore.ieee.org/document/11325336">VR driving test</a></div>
+        </div>
+      </article>
+      <article class="entry" id="sensor-fusion">
+        <div>
+          <p class="meta">Sensor fusion · State estimation</p>
+        </div>
+        <div>
+          <h3>Sensor fusion and localisation</h3>
+          <p>A ground vehicle has to know where it is, reliably, and with sensors that are affordable. We fuse wheel odometry, inertial measurements, consumer-grade GPS, and visual mapping through extended Kalman filtering, and evaluate the result on personal mobility vehicles and mobile robots, indoors and outdoors.</p>
+          <p>Results include fusion-based localisation for outdoor personal mobility vehicles, a multi-sensor localisation system for low-cost indoor navigation, fusion of an indoor positioning system with odometry, and a survey of GPS-aided sensor fusion. My current work extends this line towards learning-based sensor fusion for state estimation.</p>
+          <div class="entry-links"><a href="https://doi.org/10.1007/s41315-025-00443-5">Outdoor fusion (IJIRA)</a><a href="https://doi.org/10.1007/s41315-024-00350-1">Indoor localisation (IJIRA)</a><a href="https://doi.org/10.55981/j.mev.2025.1294">EKF fusion</a><a href="https://doi.org/10.11113/jurnalteknologi.v88.24026">Survey</a><a href="https://doi.org/10.1109/ICSMech62936.2024.10812253">Indoor positioning and odometry</a></div>
+        </div>
+      </article>
+      <article class="entry" id="delivery">
+        <div>
+          <p class="meta">Service robots · Multi-robot systems</p>
+        </div>
+        <div>
+          <h3>Autonomous delivery and logistics robots</h3>
+          <p>DELL-E is our last-mile delivery robot for delivery-on-demand in managed areas, developed as a complete system: the robot, its autonomy software, and the connected services around it. The work has produced a registered patent and an industrial design for the robot, and a companion delivery application.</p>
+          <p>In parallel, we study mobile robots for flexible manufacturing, including Mecanum-wheeled platforms and safe navigation with model predictive control and control barrier functions, and are extending this to multi-robot systems for smart manufacturing.</p>
+          <p class="funding"><span>Funding</span> BRIN (2025), with Universitas Diponegoro; BRIN (2026).</p>
+          <div class="entry-links"><a href="https://doi.org/10.1109/ATNT61688.2024.10719179">Mecanum robot for flexible manufacturing</a><a href="https://www.engineeringletters.com/issues_v34/issue_9/EL_34_9_09.pdf">Safe navigation with MPC and CBF</a></div>
         </div>
       </article>
       <article class="entry" id="inspection">
         <div>
-          <div class="num" aria-hidden="true">03</div>
           <p class="meta">Field robotics · Multimodal sensing</p>
         </div>
         <div>
-          <h2>Inspection and exploration robots</h2>
-          <p>With the Robotics and System Intelligence (RoSI) research group at BRIN, I work on mobile robots for inspection and exploration, including quadruped platforms and multimodal sensor payloads. This is ongoing work.</p>
+          <h3>Inspection and exploration robots</h3>
+          <p>QUINS is a quadruped inspection system for industrial sites and high-risk zones, combining a legged platform with IoT connectivity and a multimodal sensor payload. Alongside the platform, we work on the perception a robot needs to understand such environments: semantic mapping, hazard mapping, and object detection with 360-degree cameras and 3D LiDAR.</p>
+          <p class="funding"><span>Funding</span> BRIN (2026), with Pertamina, Universitas Gadjah Mada, and Universitas Airlangga.</p>
+          <div class="entry-links"><a href="https://ieeexplore.ieee.org/document/11350240">Semantic hazard mapping</a><a href="https://ieeexplore.ieee.org/document/11647242">Object detection with 360° cameras and LiDAR</a><a href="https://www.journal.irpi.or.id/index.php/malcom/article/view/2521">Indoor semantic mapping</a></div>
         </div>
       </article>
+      <article class="entry" id="manipulation">
+        <div>
+          <p class="meta">Manipulation · Assistive robotics</p>
+        </div>
+        <div>
+          <h3>Manipulation and assistive robots</h3>
+          <p>On the manipulation side, we work on position, force, and admittance control of a six-axis arm, and on vision-guided grasping. On the assistive side, we develop on-device tactile intelligence for low-cost prosthetic hands using bio-based stretchable sensors, and contribute to a lower-limb exoskeleton for physiotherapy assistance.</p>
+          <p class="funding"><span>Funding</span> Toray Science and Technology Research Grant (2025); BRIN – LPDP (2024), with Telkom University Surabaya.</p>
+          <div class="entry-links"><a href="https://ieeexplore.ieee.org/document/11647232">End-effector position control</a><a href="https://ieeexplore.ieee.org/document/11647213">Admittance control</a><a href="https://ieeexplore.ieee.org/document/11647188">Vision-guided grasping</a></div>
+        </div>
+      </article>
+      <h2 class="group-head">Earlier work</h2>
       <article class="entry" id="casualty-extraction">
         <div>
-          <div class="num" aria-hidden="true">04</div>
           <p class="meta">Rescue robotics · Model predictive control</p>
         </div>
         <div>
-          <h2>Autonomous casualty extraction</h2>
-          <p>ResQbot explores the use of mobile robots to approach and extract casualties. My work on hierarchical decomposed-objective model predictive control (HiDO-MPC) coordinates the motion objectives involved in autonomous casualty approach.</p>
-          <p>The research combines simulation and physical robot experiments to evaluate control accuracy and robustness. Related work on ResQbot 2.0 investigates a stretcher-style design with an inflatable neck-securing device, evaluated through simulation. A review of rescue robots for casualty extraction was published in 2025.</p>
-          <div class="entry-links"><a href="https://github.com/roni-permana-saputra/HiDO-MPC-ResQbot">HiDO-MPC code</a><a href="https://doi.org/10.1109/ACCESS.2021.3063782">Control paper</a><a href="https://www.mdpi.com/2076-3417/11/12/5414">ResQbot 2.0 paper</a><a href="https://doi.org/10.1109/ACCESS.2025.3637567">Review paper</a></div>
+          <h3>Autonomous casualty extraction</h3>
+          <p>My doctoral research at Imperial College London developed ResQbot, a mobile rescue robot that approaches and extracts casualties. Hierarchical decomposed-objective model predictive control (HiDO-MPC) coordinates the motion objectives of the approach, and ResQbot 2.0 adds a stretcher-style design with an inflatable neck-securing device. A review of rescue robots for casualty extraction followed in 2025.</p>
+          <p class="funding"><span>Funding</span> Indonesia Endowment Fund for Education (LPDP) doctoral scholarship.</p>
+          <div class="entry-links"><a href="https://doi.org/10.1109/ACCESS.2021.3063782">HiDO-MPC paper</a><a href="https://doi.org/10.3390/app11125414">ResQbot 2.0 paper</a><a href="https://doi.org/10.1109/ACCESS.2025.3637567">Review paper</a><a href="https://github.com/roni-permana-saputra/HiDO-MPC-ResQbot">HiDO-MPC code</a></div>
         </div>
       </article>
       <article class="entry" id="casualty-detection">
         <div>
-          <div class="num" aria-hidden="true">05</div>
           <p class="meta">Robot perception · Sim-to-real learning</p>
         </div>
         <div>
-          <h2>Learning to detect casualties</h2>
+          <h3>Learning to detect casualties</h3>
           <p>Ground-projected point clouds provide a representation for detecting people lying on the ground. This work uses synthetic training data and augmentation to transfer a learned detector to real sensor observations.</p>
-          <p>The Deep_GPPC repository accompanies the research on sim-to-real learning for casualty detection.</p>
-          <div class="entry-links"><a href="https://github.com/roni-permana-saputra/Deep_GPPC">Deep_GPPC code</a><a href="https://arxiv.org/abs/1908.03057">Paper</a></div>
+          <div class="entry-links"><a href="https://doi.org/10.1109/IROS40897.2019.8967642">IROS 2019 paper</a><a href="https://github.com/roni-permana-saputra/Deep_GPPC">Deep_GPPC code</a></div>
+        </div>
+      </article>
+      <article class="entry" id="legged">
+        <div>
+          <p class="meta">Legged robots · Research platforms</p>
+        </div>
+        <div>
+          <h3>Legged robots and research platforms</h3>
+          <p>At the Robot Intelligence Lab I also contributed to SLIDER, an ultra-lightweight knee-less bipedal walking robot, and to Robot DE NIRO, a mobile research platform for manipulation.</p>
+          <div class="entry-links"><a href="https://doi.org/10.1109/IROS45743.2020.9341143">SLIDER (IROS 2020)</a><a href="https://doi.org/10.1007/978-3-030-86294-7_12">SLIDER energy efficiency (CLAWAR 2021)</a><a href="https://doi.org/10.3389/frobt.2020.00066">Robot DE NIRO</a></div>
         </div>
       </article>
       <article class="entry" id="software">
         <div>
-          <div class="num" aria-hidden="true">06</div>
           <p class="meta">Open-source software</p>
         </div>
         <div>
-          <h2>PythonMobileRobot</h2>
+          <h3>PythonMobileRobot</h3>
           <p>A collection of Python code for mobile robot applications, available on GitHub.</p>
           <div class="entry-links"><a href="https://github.com/roni-permana-saputra/PythonMobileRobot">Repository</a><a href="https://github.com/roni-permana-saputra?tab=repositories">All repositories</a></div>
         </div>
