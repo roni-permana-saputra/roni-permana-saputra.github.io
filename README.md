@@ -31,7 +31,6 @@ I work on autonomous mobile robots, from mechanical design and perception to nav
 
 - [HiDO-MPC-ResQbot](https://github.com/roni-permana-saputra/HiDO-MPC-ResQbot): hierarchical decomposed-objective model predictive control for autonomous casualty extraction
 - [Deep_GPPC](https://github.com/roni-permana-saputra/Deep_GPPC): sim-to-real learning for casualty detection from ground-projected point clouds
-- [PythonMobileRobot](https://github.com/roni-permana-saputra/PythonMobileRobot): Python code for mobile robot applications
 
 ## Contact
 
