@@ -22,9 +22,9 @@ I work on autonomous mobile robots, from mechanical design and perception to nav
 
 - [About](https://roni-permana-saputra.github.io/)
 - [Research](https://roni-permana-saputra.github.io/research.html)
-- [Publications](https://roni-permana-saputra.github.io/publications.html)
 - [Group & Lab](https://roni-permana-saputra.github.io/lab.html)
 - [Supervision](https://roni-permana-saputra.github.io/supervision.html)
+- [Publications](https://roni-permana-saputra.github.io/publications.html)
 - [CV](https://roni-permana-saputra.github.io/cv.html)
 
 ## Related repositories
@@ -36,4 +36,6 @@ I work on autonomous mobile robots, from mechanical design and perception to nav
 
 roni.permana.saputra@brin.go.id ·
 [Google Scholar](https://scholar.google.co.id/citations?user=I5WKiPUAAAAJ&hl=en) ·
+[Scopus](https://www.scopus.com/authid/detail.uri?authorId=55383361400) ·
+[ORCID](https://orcid.org/0000-0001-6989-8830) ·
 [LinkedIn](https://www.linkedin.com/in/roni-permana-saputra/)
