@@ -141,7 +141,8 @@ footer { border-top: 1px solid var(--line); }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; padding-top: 20px; padding-bottom: 24px; color: var(--muted); font-size: .85rem; }
 .footer-inner p { margin: 0; }
 .footer-inner a { color: var(--muted); }
-.footer-links { display: flex; gap: 16px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.footer-links a { white-space: nowrap; }
 
 @media (max-width: 760px) {
   .layout { grid-template-columns: 1fr; gap: 28px; padding-top: 24px; padding-bottom: 40px; }
