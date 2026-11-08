@@ -165,3 +165,18 @@ footer { border-top: 1px solid var(--line); }
   .wrap, main { max-width: none; padding: 0; }
   .cv-row, .publication, .entry { break-inside: avoid; }
 }
+
+.video { margin: 16px 0; max-width: 640px; }
+.video-facade, .video iframe { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 6px; overflow: hidden; background: #000; }
+.video-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-facade .play { position: absolute; left: 50%; top: 50%; width: 64px; height: 44px; margin: -22px 0 0 -32px; border-radius: 10px; background: rgba(0,0,0,.7); transition: background .15s; }
+.video-facade .play::after { content: ""; position: absolute; left: 26px; top: 13px; border-style: solid; border-width: 9px 0 9px 15px; border-color: transparent transparent transparent #fff; }
+.video-facade:hover .play, .video-facade:focus-visible .play { background: #c00; }
+.video figcaption { margin-top: 6px; font-size: .88rem; color: var(--muted); }
+
+.sup-list { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 14px; }
+.sup-card { padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+.sup-card .sup-label { margin: 0 0 2px; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.sup-card h3 { margin: 0 0 4px; font-size: 1.02rem; line-height: 1.4; color: var(--ink); }
+.sup-card p { margin: 0; color: var(--text); }
+.section .sup-list { margin-top: 12px; }
